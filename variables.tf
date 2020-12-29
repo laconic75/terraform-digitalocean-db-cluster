@@ -15,17 +15,17 @@ variable "database_name" {
 }
 
 variable "instance_size" {
-  type = string
+  type    = string
   default = "db-s-1vcpu-1gb"
 }
 
 variable "region" {
-  type = string
+  type    = string
   default = "nyc1"
 }
 
 variable "node_count" {
-  type = number
+  type    = number
   default = 1
 }
 

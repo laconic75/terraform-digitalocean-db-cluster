@@ -23,9 +23,9 @@ resource "digitalocean_database_db" "database" {
 
 resource "digitalocean_database_firewall" "db-firewall" {
   cluster_id = digitalocean_database_cluster.db-cluster.id
-  
+
   rule {
-    type = "droplet"
+    type  = "droplet"
     value = var.frontend_webserver
   }
 }
